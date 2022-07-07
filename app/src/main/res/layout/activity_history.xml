@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient3"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/uppercontainer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/secondarytest2"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:onClick="seeGraph"
+            android:text="@string/see_graphs"/>
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/historyheader"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/secondarytest2"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_weight="10"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    >
+
+    <TableLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:stretchColumns="1,2,3,4"
+        android:layout_margin="5dp">
+
+        <TableRow
+            android:background="@drawable/border">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:text="HR"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_column="1"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:text="SPo2"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_column="1"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:text="Date"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_column="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Status"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:layout_weight=".25"
+                android:padding="10dp"
+                android:layout_column="1"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomcontainer"
+        android:layout_weight="70"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

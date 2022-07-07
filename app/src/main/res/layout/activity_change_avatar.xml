@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeAvatarActivity"
+    android:background="@drawable/gradient3"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/uppercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="changeUserAvatar"
+            android:src="@drawable/default_avatar"
+            app:civ_border_color="@color/gStart"
+            app:civ_border_width="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView_username"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:padding="10dp"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:onClick="editUsername">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/userUsername"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:onClick="editHeight">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text="Height (m)"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/userHeight"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:onClick="editWeight">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (Kg)"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/userWeight"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:onClick="editWeight">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Class"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/userWeightClass"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:onClick="logoutButton"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/round_button"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">CardioGo</string>
+    <string name="reverselunges">
+        \n\n1. Get a big step backward with one leg.\n\n
+2. Lower your hips.\n\n
+3. Slowly push your body back to starting position.\n\n
+</string>
+    <string name="skaterjump">
+        \n\n1.Begin with your legs hip-width separated.\n\n
+2. While exhaling, swing your arms and jump to contrary.\n\n
+3. Shift your weight to your opposite leg behind you.\n\n
+</string>
+    <string name="burpees">
+        \n\n1. Stand with feet a little wider than hip width.\n\n
+2. Get down on all fours.\n\n
+3. Step your legs forward to return to stand up.\n\n
+
+</string>
+    <string name="highkneesmarch">
+        \n\n1. Stand with your feet hip-width apart.\n\n
+2. Lift up one knee to your chest.\n\n
+3. Continue for alternating legs.\n\n
+</string>
+    <string name="planksalute">
+        \n\n1. Begin in the full plank position.\n\n
+2. lift one arm up into a horizontal position to make a good salute.\n\n
+3. Rest your arm on the ground.\n\n
+</string>
+    <string name="midlevelstepup">
+        \n\n1. Raise one foot on the bench.\n\n
+2. Lift your body by pivoting the raised foot.\n\n
+3. Step down from the bench.\n\n
+</string>
+    <string name="kneelevelplanksalute">
+        \n\n1. Stand with feet a little wider than hip width.\n\n
+2. Lean on a knee level platform.\n\n
+3. Step your legs forward to return to stand up.\n\n
+</string>
+    <string name="sidetoside">
+        \n\n1. Begin in a standing position.\n\n
+2. With one hand, tap your foot with a crisscross motion.\n\n
+3. Continue with alternating motion.\n\n
+</string>
+    <string name="runinplace">
+        \n\n1. Lift your right arm and left foot at the same time.\n\n
+2. Then switch to the opposite foot, quickly lifting your right.\n\n
+3. At the same time, move your right arm back and your left arm.\n\n
+</string>
+    <string name="kneelevelburpees">
+        \n\n1. Lift your right arm and left foot at the same time.\n\n
+2. Then switch to the opposite foot, quickly lifting your right.\n\n
+3. At the same time, move your right arm back and your left arm.\n\n
+</string>
+
+    <!-- end of new -->
+
+    <string name="chairsquat">
+        \n\n1. Stand just in front of your chair, facing away from it.\n\n
+2. Engage your core as you bend your knees and lower your hips.\n\n
+3. Gently tap the chair with your butt, then slowly get back to starting position.\n\n
+</string>
+    <string name="stationarymarch">
+        \n\n1. Stand with your feet slightly apart and your arms at your side.\n\n
+2. March in place.\n\n
+3. Repeat the process.\n\n
+</string>
+    <string name="halfjumpingjack">
+        \n\n1. Start in a standing position with your feet together and your arms at your sides.\n\n
+2. Step your feet outwards to the side while you lift your arms until your hands meet over your head.\n\n
+3. Step your feet inwards and lower your arms to your sides.\n\n
+</string>
+    <string name="inclinedpushup">
+        \n\n1. Stand infront of a wall with your arms straight out in front of you. Your palms should be on the wall.\n\n
+2. Bend your elbows and begin to lean your body toward the wall until your nose almost touches it.\n\n
+3. Push back to the starting position and repeat.\n\n
+</string>
+    <string name="stepingburpees">
+        \n\n1. Stand with feet shoulder-width apart.\n\n
+2. Put your arms on the chair and take a step backward and then forward.\n\n
+3. Then go back to standing position and raise your arms.\n\n
+</string>
+
+<!-- end of new -->
+
+
+    <string name="startworkoutheader">
+        <u>Today\'s Workout</u>
+</string>
+
+    <string name="achievements_fitness">
+        Your road to fitness starts now!
+    </string>
+    <string name="achievements_lvl3">
+        Achieved level 3!
+    </string>
+
+    <string name="achievements_workout">
+        Working out for 3 consecutive days.
+    </string>
+    <string name="achievements_lvl5">
+        Achieved level 5!
+    </string>
+
+    <string name="achievements_mentality">
+        Working out for 5 consecutive days.
+    </string>
+
+    <string name="achievements_streak7">
+        Working out for 7 consecutive days.
+    </string>
+    <string name="achievementsheader">
+        <u>Achievements</u>
+</string>
+    <string name="exercisesheader">
+        <u>Exercises</u>
+</string>
+    <string name="historyheader">
+        <u>Workout History</u>
+</string>
+
+    <string name="historygraphheader">
+        <u>History Records</u>
+</string>
+    <string name="restingtime">
+        <u>Resting Time</u>
+</string>
+    <string name="Reminders">
+        <u>Reminders</u>
+</string>
+    <string name="heartRate">
+        <u>Heart Rate</u>
+</string>
+
+    //FOR GRAPH
+    <string name="see_graphs"><u>SEE GRAPH></u></string>
+
+</resources>

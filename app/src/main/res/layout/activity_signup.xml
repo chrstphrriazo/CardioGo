@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/white"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+
+
+
+    <!-- Layout for header  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:background="@color/gStart"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register to"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CARDIO GO!"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@drawable/background_waves"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <!-- Left padding  -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"/>
+
+
+        <!-- Main Container  -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:scrollbars="none"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="12"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Height(m):"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Weight(Kg):"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:imeOptions="actionDone"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:padding="5dp">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/signupBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Birthday"
+                    android:onClick="selectBirthday"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/poppins_light"
+                    android:background="@drawable/round_border"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="16"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <Button
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/gStart"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/signupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="60"
+                    android:text="REGISTER"
+                    android:onClick="registerAccount"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:background="@drawable/round_button"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!-- RIght padding  -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

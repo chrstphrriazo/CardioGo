@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisclaimerActivity"
+    android:background="@drawable/gradient3"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:text="@string/Reminders"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/secondarytest2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="1. Make sure to stretch for 2-3 minutes before working out."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="2. If you are not familiar with the exercises, take time to read and watch the instructions first."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="3. If you experience trouble in breathing, stop immediately and seek medical assistance."
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"/>
+
+            <Button
+                android:onClick="proceedButton"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:background="@drawable/round_button"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

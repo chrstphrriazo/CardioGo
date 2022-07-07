@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient3"
+    >
+
+    <!-- Container of profile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingTop="50dp"
+        android:weightSum="100"
+        android:id="@+id/uppercontainer">
+
+        <!-- 65% Divide to 3 containers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <!-- 33% Streak info -->
+            <LinearLayout
+                android:layout_weight="33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Streak"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_streak"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="1"
+                    android:textSize="40sp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_day"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Day"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <!-- 33% Avatar -->
+            <LinearLayout
+                android:layout_weight="33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:onClick="changeAvatar"
+                    android:id="@+id/avatarMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/default_avatar"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/gStart"/>
+
+            </LinearLayout>
+
+            <!-- 33% Streak info -->
+            <LinearLayout
+                android:layout_weight="33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Level"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView_level"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="1"
+                    android:textSize="40sp"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <!-- Container of Username-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/textView_username"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="25sp"
+                />
+
+        </LinearLayout>
+
+        <!-- Container of Progress bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:progressDrawable="@drawable/custom_progress" />
+
+                <TextView
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"/>
+        </LinearLayout>
+            
+
+
+    </LinearLayout>
+
+    <!-- Container of Buttons-->
+    <LinearLayout
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:id="@+id/bottomcontainer"
+        >
+
+        <GridLayout
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:id="@+id/startWokroutButton"
+                            android:onClick="startWorkout"
+                            android:background="@drawable/start_exercise_custom_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="exercises_button"
+                            android:background="@drawable/exercises_custom_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="achievementsButton"
+                            android:background="@drawable/achievements_custom_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="50"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:onClick="historyButton"
+                            android:background="@drawable/history_custom_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </GridLayout>
+
+        <!-- close 70% -->
+    </LinearLayout>
+
+</LinearLayout>

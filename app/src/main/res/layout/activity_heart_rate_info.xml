@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="@string/heartRate"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/secondarytest2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="1. Position your palm facing up."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="2. Rest your phone on your palm."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="3. Place your index finger on the camera."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="4. Make sure that your finger is covering the entire camera."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="fill_vertical"
+                android:textSize="17sp"
+                android:text="5. Stay still until the detection of your heart rate is done."
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

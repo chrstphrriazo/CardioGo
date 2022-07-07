@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    android:background="@color/gStop"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:id="@+id/avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/default_avatar"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white">
+                <ImageButton
+                    android:id="@+id/setAvatar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_avatar"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white">
+            <ImageButton
+                android:id="@+id/setAvatar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boy_avatar"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white">
+            <ImageButton
+                android:id="@+id/setAvatar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boy_avatar_2"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white">
+            <ImageButton
+                android:id="@+id/setAvatar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/girl_avatar"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:background="@color/white">
+            <ImageButton
+                android:id="@+id/setAvatar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/girl_avatar_2"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/saveButton"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_button"
+                android:text="Save"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <Button
+                android:textColor="@color/white"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/red"
+                android:id="@+id/cancelbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
